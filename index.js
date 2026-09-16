@@ -1,5 +1,5 @@
 //import dotenv
-// require('dotenv').config()
+require('dotenv').config()
 
 //import express
 const express = require('express')
@@ -8,22 +8,22 @@ const express = require('express')
 const cors = require('cors')
 
 //import router
-// const router = require('./router')
+const router = require('./router')
 
 //import connection
-// require('./connection')
+require('./connection')
 
 //create server
 const diaryServer = express()
 
 //tell server to use cors
-// diaryServer.use(cors())
+diaryServer.use(cors())
 
 //tell server to use express.json
-// diaryServer.use(express.json())
+diaryServer.use(express.json())
 
 //tell server to use router
-// diaryServer.use(router)
+diaryServer.use(router)
 
 //set port for the server
 const PORT = 4001 || process.env.PORT
