@@ -1,7 +1,7 @@
 //Import mongoose
 const mongoose = require('mongoose')
 
-connectionString = process.env.DATABASE
+const connectionString = process.env.DATABASE
 
 mongoose.connect(connectionString).then(() => {
     console.log(`MongoDB connection sucessfull`);

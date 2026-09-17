@@ -1,5 +1,6 @@
 //import dotenv
-require('dotenv').config()
+const dotenv = require('dotenv')
+dotenv.config()
 
 //import express
 const express = require('express')
@@ -24,6 +25,7 @@ diaryServer.use(express.json())
 
 //tell server to use router
 diaryServer.use(router)
+
 
 //set port for the server
 const PORT = 4001 || process.env.PORT
